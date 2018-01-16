@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ярослава Пешнина](https://up.htmlacademy.ru/adaptive/13/user/9745).
-* Наставник: `Неизвестно`.
+* Наставник: Сергей Зубов.
 
 ---
 
