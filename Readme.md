@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Ярослава Пешнина](https://up.htmlacademy.ru/adaptive/13/user/9745).
-* Наставник: Сергей Зубов.
+* Студент: [Наргис Полякова](https://up.htmlacademy.ru/adaptive/13/user/130215).
+* Наставник: Виктория Коваленко.
 
 ---
 
@@ -54,7 +54,7 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Профессиональный HTML и CSS](https://htmlacademy.ru/intensive/adaptive)», уровень 2 от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.org/htmlacademy-adaptive/9745-pink.svg?branch=master
-[travis-url]: https://travis-ci.org/htmlacademy-adaptive/9745-pink
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/9745-pink/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/9745-pink?type=dev
+[travis-image]: https://travis-ci.org/htmlacademy-adaptive/130215-pink.svg?branch=master
+[travis-url]: https://travis-ci.org/htmlacademy-adaptive/130215-pink
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/130215-pink/dev-status.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/130215-pink?type=dev
