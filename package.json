@@ -1,23 +1,30 @@
 {
-  "name": "pink",
-  "version": "13.0.0",
+  "name": "Project-Pink",
+  "version": "0.0.1",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x",
-    "stylelint": "8.4.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "autoprefixer": "^7.2.1",
+    "css-mqpacker": "^6.0.1",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-csso": "^2.2.1",
+    "grunt-cwebp": "^2.1.1",
+    "grunt-juwain-posthtml": "^0.6.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-svgmin": "^5.0.0",
+    "grunt-svgstore": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2",
+    "posthtml-include": "^1.1.0"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint .",
-    "test": "npm run editorconfig"
-  },
-  "editorconfig-cli": [
-    "*.json",
-    "source/*.html"
-  ],
-  "engines": {
-    "node": "8.9"
+    "build": "grunt build",
+    "start": "npm run build && grunt serve"
   }
 }
