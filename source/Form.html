@@ -1,121 +1,127 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
-<!--   <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-</head>
-<body>
- <header class="page-header">
-  <h1 class="visually-hidden">Форма Пинк</h1>
-  <nav class="main-nav">
-    <h2 class="visually-hidden">Навигация по сайту</h2>
-    <a class="logo" href="index.html">
-      <img src="img/logo-pink-white-mobile.svg"  alt="Лого-Пинк">
-    </a>
-    <button class="btn-menu" type="button">
-      <span class="visually-hidden">кнопка меню</span>
-    </button>
-    <ul class="site-nav">
-      <li class="site-nav__item"><a class="site-nav__link">Главная</a></li>
-      <li class="site-nav__item"><a class="site-nav__link" href="Catalog.html">Фотографии</a></li>
-      <li class="site-nav__item"><a class="site-nav__link">Конкурс</a></li>
-      <li class="site-nav__item"><a class="site-nav__link">HTML Academy</a></li>
-    </ul>
-  </nav>
-  <p class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</p>
-</header>
-<main>
-  <div class="form-review">
-    <p>
-      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
-    </p>
-    <form action="https://echo.htmlacademy.ru" method="get">
-     <h3 class="visually-hidden">Форма-отзыв</h3>
-     <div class="form-review__self-info">
-      <label  class="form-review__label" for="surname">Фамилия</label>
-      <input class="form-review__input" type="text" name="name" id="surname" placeholder="Укажите фамилию *">
-      <label class="form-review__label" for="name">Имя</label>
-      <input class="form-review__input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
-      <label class="form-review__label" for="patronymic">Отчество</label>
-      <input class="form-review__input" type="text" name="name" id="patronymic" placeholder="Ну и отчество тоже">
-    </div>
-
-    <fieldset class="form-review__os-review">
-      <legend>С каким приложением путешествовали?</legend>
-      <div class="form-review__wrapper">
-        <input class="form-review__text" type="radio" id="ios">
-        <label class="form-review__checkbox" for="ios">Pink для iOS</label>
-        <input class="form-review__text" type="radio" id="android">
-        <label class="form-review__checkbox" for="android">Pink на Android</label>
-        <input class="form-review__text" type="radio" id="windows">
-        <label class="form-review__checkbox" for="windows">Windows Phone</label>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк -Форма</title>
+  </head>
+  <body>
+    <!--     <div style="display: none">
+      <include src="build/img/svg-icon/svg-sprite.svg"></include>
+    </div> -->
+    <header class="page-header">
+      <h1 class="visually-hidden">Форма Пинк</h1>
+      <nav class="main-nav">
+        <h2 class="visually-hidden">Навигация по сайту</h2>
+        <a class="logo" href="index.html">
+          <svg class="logo__img-mobile" width="" height="">
+            <use xlink:href="#"></use>
+          </svg>
+        </a>
+        <button class="btn-menu" type="button">
+          <span class="visually-hidden">кнопка меню</span>
+          <span class="btn-menu__item"></span>
+          <span class="btn-menu__item"></span>
+          <span class="btn-menu__item"></span>
+        </button>
+        <ul class="site-nav">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="Catalog.html">Фотографии</a></li>
+          <li class="site-nav__item"><span class="site-nav__link">Конкурс</span></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <p class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</p>
+    </header>
+    <main>
+      <section class="form-review">
+        <h2 class="visually-hidden">Регистация</h2>
+        <p class="form-review__caption">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        </p>
+        <form class="registr-form" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="registr-form__fieldset">
+            <legend class="registr-form__legend">Имя Фамилия Отчество</legend>
+            <label for="soname-field">Фамилия:</label>
+            <input type="text" name="soname" id="soname-field" placeholder="Укажите фамилию*" required="">
+            <label for="name-field">Имя:</label>
+            <input type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required="">
+            <label for="patronymic-field">Отчество:</label>
+            <input type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="registr-form__fieldset">
+            <legend class="registr-form__legend">С каким приложением путешествовали?</legend>
+            <input type="radio" name="os" id="pinkos-field" value="ios" checked="">
+            <label for="pinkos-field">Pink для iOS</label>
+            <input type="radio" name="os" id="androidos-field" value="android">
+            <label for="androidos-field">Pink на Android</label>
+            <input type="radio" name="os" id="windows-field" value="wphone">
+            <label for="windows-field">Windows Phone</label>
+          </fieldset>
+          <fieldset class="registr-form__fieldset">
+            <legend class="registr-form__legend">Контактная информация</legend>
+            <input type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста" pattern="[0-9]{11}">
+            <label for="phone-field">номер телефона</label>
+            <input type="email" name="email" id="email-field" placeholder="Введите почту*" required="">
+            <label for="email-field">адрес почты</label>
+          </fieldset>
+          <fieldset class="registr-form__fieldset">
+            <legend class="registr-form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <input type="checkbox" name="progress" value="selfe" id="selfes-field" checked="">
+            <label for="selfes-field">Сделал селфи с акулой</label>
+            <input type="checkbox" name="progress" value="beach" id="beach-field" checked="">
+            <label for="beach-field">Обгорел на пляже</label>
+            <input type="checkbox" name="progress" value="chack" id="chack-field">
+            <label for="chack-field">Видел Чака Норриса</label>
+            <input type="checkbox" name="progress" value="present" id="present-field">
+            <label for="present-field">Накупил сувениров</label>
+            <input type="checkbox" name="progress" value="power" id="power-field" checked="">
+            <label for="power-field">Удержал башню</label>
+            <input type="checkbox" name="progress" value="hotel" id="hotel-field">
+            <label for="hotel-field">Разгромил отель</label>
+          </fieldset>
+          <fieldset class="registr-form__fieldset">
+            <legend class="registr-form__legend">Опишите свои эмоции</legend>
+            <textarea name="comment" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="btn" type="submit">Отправить форму</button>
+          <span>* — обязательные для заполнения поля</span>
+        </form>
+      </section>
+      <div class="popup-error">
+        <span class="popup-error__caption">Что-то пошло не так!</span>
+        <p class="popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="btn" type="button">Ок</button>
       </div>
-    </fieldset>
-
-    <fieldset class="form-review__self-links">
-     <legend class="form-review__title">Контактная информация</legend>
-     <div class="form-review__wrapper contact-info">
-       <input type="tel" id="tel"> placeholder="Номер, пожалуйста">
-       <label class="form-review__label" for="tel">Номер телефона</label>
-       <input type="text" id="e-mail" placeholder="Введите почту *">
-       <label  class="form-review__label" for="e-mail">Укажите фамилию *</label>
-     </div>
-   </fieldset>
-
-   <fieldset class="form-review__achievement-block">
-    <legend class="form-review__title">Ваши безбашенные
-    достижения в путешествии</legend>
-    <div class="form-review__wrapper achievement-info">
-      <input class="achievement-info__input" id=Selfie type="checkbox" checked>
-      <label class="achievement-info__label" for="Selfie">Сделал селфи с акулой</label>
-      <input class="achievement-info__input" id=beach type="checkbox" checked>
-      <label class="achievement-info__label" for="beach">Обгорел на пляже</label>
-      <input class="achievement-info__input" id=chak type="checkbox">
-      <label class="achievement-info__label" for="chak">Видел Чака Норриса</label>
-      <input class="achievement-info__input" id=souvenir type="checkbox">
-      <label class="achievement-info__label" for="souvenir">Накупил сувениров</label>
-      <input class="achievement-info__input" id=tower type="checkbox">
-      <label class="achievement-info__label" for="tower">Удержал башню</label>
-      <input class="achievement-info__input" id=hotel type="checkbox" checked>
-      <label class="achievement-info__label" for="hotel">Разгромил отель</label>
-    </div>
-  </fieldset>
-  <fieldset class="form-review__emotion-desc">
-    <legend class="form-review__title">Опишите свои эмоции</legend>
-    <div class="form-review__wrapper">
-      <textarea name=comment id=comment-field>Можно прям в красках, не стесняясь в выражениях</textarea>
-    </div>
-  </fieldset>
-  <button class="btn btn--form" type="button">Отправить форму</button>
-  <span class="form-review__remark">*Поля обязательны для заполнения</span>
-</form>
-</div>
-</main>
-<footer>
-  <h2 class="visually-hidden">Мы в соцсетях</h2>
-  <div class="logo">
-    <a class="logo__link" href="#">
-      <img class="logo__img" src="http://placehold.it/150x100" alt="логотип пинк">
-    </a>
-  </div>
-  <ul class="social">
-    <li class="social__item">
-      <a class="social__link" href="#"><span class="visually-hidden">Твиттер</span></a>
-    </li>
-    <li class="social__item">
-      <a class="social__link" href="#"><span class="visually-hidden">Фасебук</span></a>
-    </li>
-    <li class="social__item">
-      <a class="social__link" href="#"><span class="visually-hidden">Ютуб</span></a>
-    </li>
-  </ul>
-  <div class="logo-html">
-    <a class="logo-html__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-      <span class="visually-hidden">HTML-Academy</span>
-      <img class="logo-html__img" src="http://placehold.it/50x50" alt="логотип htmlacademy">
-    </a>
-  </div>
-</footer>
-</body>
+      <div class="popup-send">
+        <span class="popup-error__caption">Ваша заявка отправлена</span>
+        <p class="popup-error__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <button class="btn" type="button">Закрыть окно</button>
+      </div>
+    </main>
+    <footer>
+      <h2 class="visually-hidden">Мы в соцсетях</h2>
+      <div class="logo">
+        <a class="logo__link" href="#">
+          <img class="logo__img" src="http://placehold.it/150x100" alt="логотип пинк">
+        </a>
+      </div>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#"><span class="visually-hidden">Твиттер</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#"><span class="visually-hidden">Фасебук</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#"><span class="visually-hidden">Ютуб</span></a>
+        </li>
+      </ul>
+      <div class="logo-html">
+        <a class="logo-html__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <span class="visually-hidden">HTML-Academy</span>
+          <img class="logo-html__img" src="http://placehold.it/50x50" alt="логотип htmlacademy">
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
