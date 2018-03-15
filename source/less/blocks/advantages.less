@@ -1,0 +1,48 @@
+.advantage {
+  margin: 0 auto;
+  padding-bottom: 50px;
+
+  &__title {
+    color:  #283645;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    background-color: @white;
+  }
+
+  &__caption {
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  &__caption-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    padding-right: 14%;
+    padding-left: 14%;
+  }
+
+  &__wrap{
+    background: #f2f2f2;
+    position: relative;
+  }
+}
+
+.advantage__caption:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-right: 100vw solid #f2f2f2;
+  border-top: 8vw solid transparent;
+  z-index: -1;
+}
+
+.advantage__caption-title:last-child{
+  margin-bottom: 40px;
+  padding-right: 16%;
+  padding-left: 16%;
+}
+

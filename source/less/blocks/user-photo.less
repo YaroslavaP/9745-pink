@@ -1,0 +1,88 @@
+
+p {
+  margin:0;
+}
+
+.user-photo {
+ min-width: 320px;
+ max-width: 500px;
+ margin: 0 auto;
+ padding-bottom: 28px;
+}
+
+.user-photo__comment {
+  line-height: 0;
+  padding-bottom: 21px;
+}
+
+.user-photo {
+  &__lead {
+    padding-bottom: 53px;
+  }
+
+  &__text {
+    align-self: center;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    padding-left: 12%;
+    padding-right: 39px;
+    margin:0;
+  }
+  &__comment-part {
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    background-color:#f2f2f2;
+    width: 320px;
+    margin: 0 auto;
+    align-items:flex-start;
+    height: 192px;
+    line-height: 24px;
+  }
+
+  &__user-name {
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 5px;
+
+    span {
+     font-weight: 400;
+     line-height: 24px;
+     text-transform: uppercase;
+     color: #444;
+     font-size: 14px;
+   }
+ }
+
+ &__user-comment {
+  text-align: left;
+  font-size: 14px;
+  padding-bottom: 16px;
+
+}
+}
+
+.user-photo__likes::before {
+  content:"";
+  display: block;
+  background-image: url("../img/icon-heart.svg");
+  width: 13px;
+  height: 16px;
+  background-repeat: no-repeat;
+  margin-top: 5px;
+  margin-right: 19px;
+  color: #d22856;
+}
+.user-photo__likes {
+  font-size: 14px;
+  color: #d22856;
+  display: flex;
+  flex-direction: row;
+}
+
+.user-photo__wrap {
+  text-align: center;
+}
+
+
