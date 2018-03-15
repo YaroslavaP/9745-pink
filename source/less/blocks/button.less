@@ -1,0 +1,113 @@
+// .main-nav--closed .btn-menu{
+//   display: block;
+//   height: 23px;
+//   width: 50px;
+//    background-image: url("../img/icon-menu-burger.svg");
+//   background-repeat: no-repeat;
+//   background-color:transparent;
+//   border: none;
+// }
+
+
+// .main-nav--opened .btn-menu{
+// display: block;
+// height: 24px;
+// width: 24px;
+// font-size: 0;
+//   background-image: url("../img/icon-menu-cross.svg");
+//   background-repeat: no-repeat;
+//   background-color:transparent;
+//   border: none;
+// }
+
+.btn-menu {
+  width: 0;
+  height: 0;
+  border: 0;
+  outline: none;
+  appearance: none;
+  background-color: #283645;
+}
+
+// Вставляем среднюю полосу
+.btn-menu span {
+  display: block;
+  position: absolute;
+  top: 35px;
+  right: 18px;
+  height: 4px;
+  width: 51px;
+  background: #ffffff;
+  font-size: 0;
+}
+
+// Вставляем две следующие полоски псевдоэлементами
+.btn-menu span::before, .btn-menu span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #ffffff;
+  content: "";
+}
+
+
+.btn-menu span::before {
+  top: -10px;
+}
+
+.btn-menu span::after {
+  bottom: -10px;
+}
+
+// Задержка анимации
+.btn-menu.btn-menu__animx span {
+  background-color: #ffffff;
+  height: 4px;
+  width: 35px;
+  -webkit-transition: background 0s 0.2s;
+  transition: background 0s 0.2s;
+}
+
+.btn-menu.btn-menu__animx span::before, .btn-menu.btn-menu__animx span::after {
+ background-color: #ffffff;
+ height: 4px;
+ width: 35px;
+ -webkit-transition-duration: 0.2s, 0.2s;
+ transition-duration: 0.2s, 0.2s;
+ -webkit-transition-delay: 0.2s, 0s;
+ transition-delay: 0.2s, 0s;
+}
+
+.btn-menu.btn-menu__animx span::before {
+  -webkit-transition-property: top, transform;
+  transition-property: top, transform;
+}
+
+.btn-menu.btn-menu__animx span::after {
+  -webkit-transition-property: bottom, transform;
+  transition-property: bottom, transform;
+}
+
+/* Когда меню открыто*/
+.btn-menu.btn-menu__animx.is-active span {
+  background: none;
+}
+.btn-menu.btn-menu__animx.is-active span::before, .btn-menu.btn-menu__animx.is-active span::after {
+  background-color: #ffffff;
+  height: 4px;
+  width: 35px;
+  -webkit-transition-delay: 0s, 0.2s;
+  transition-delay: 0s, 0.2s;
+}
+.btn-menu.btn-menu__animx.is-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.btn-menu.btn-menu__animx.is-active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}

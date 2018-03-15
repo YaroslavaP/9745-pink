@@ -1,0 +1,114 @@
+.image-post {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+
+  &__slider {
+    display: none;
+  }
+
+  &__slider-visible {
+    -webkit-appearance: none;
+    width: 239px;
+    height: 2px;
+    background: black;
+    margin-bottom: 35px;
+  }
+}
+
+.image-post__slider-visible::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 28px;
+  background-image: url(../img/slider.png);
+}
+
+.image-post__text {
+  text-align: center;
+  padding-left: 0.9%;
+  padding-right: 0.9%;
+  padding-bottom: 50px;
+}
+
+.image-post__inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;}
+
+  .image-post__wrap{
+
+   padding-top: 20px;
+   text-align: center;
+   a{display: inline-block;}
+ }
+
+ .image-post__photo {
+  padding-bottom: 39px;
+  height: 374px;
+}
+
+.image-post__instruments {
+  padding-left: 21px;
+  height: 71px;
+}
+.image-post__icon {
+  display: block;
+  &-crop {
+    margin-right: 30px;
+  }
+
+  &-diagram {
+    margin-right: 38px;
+  }
+}
+
+.image-post-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:0 auto;
+  min-width: 320px;
+  max-width: 500px;
+}
+
+.image-post__slider {
+ -webkit-appearance: none;
+ width: 239px;
+ height: 2px;
+ background: black;
+ margin-bottom: 35px;
+}
+
+.image-post__slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 28px;
+  background-image: url(../img/slider.png);
+}
+.image-post__botton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.botton {
+  width: 276px;
+  height: 55px;
+  border: 3px solid #d22856;
+  border-radius: 28px;
+  font-size: 18px;
+  color:#d22856;
+  font-weight: bold;
+}
+.post-image {
+  margin-bottom: 12px;
+}
+.cancel-post {
+  border: 3px solid #686b6c;
+  color:#686b6c;
+}

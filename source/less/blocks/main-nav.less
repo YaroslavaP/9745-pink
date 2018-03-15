@@ -1,0 +1,25 @@
+.main-nav{
+  background-color: #283645;
+  // height: 325px;
+  &__top {
+    width: 100%;
+    height: 70px;
+    padding-top: 22px;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (min-width: 768px) {
+      height: 110px;
+    }
+  }
+}
+.main-nav--closed .site-nav {
+  display: none;
+}
+
+.main-nav--closed .main-nav__top {
+ background-color: rgba(0, 0, 0, 0.5);
+}
